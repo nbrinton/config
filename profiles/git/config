@@ -1,0 +1,6 @@
+# Append this to the end of the config file in .git/
+
+[alias]
+	ll = log --graph --all --oneline
+	s = status
+	ch = checkout

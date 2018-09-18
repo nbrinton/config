@@ -1,0 +1,1 @@
+# Gitbash Runtime Configuration File

@@ -1,0 +1,32 @@
+NOTES:
+
+Before running installation scripts, create the bin directory within /opt and 
+add this line to the .bashrc file:
+
+	# Add /opt/bin to path
+	PATH=$PATH:/opt/bin
+
+Also before installing IntelliJ, PyCharm, and Eclipse, make sure to download
+the respective tar files first.
+
+
+Basic Virtual Machine Setup:
+	install_default.sh
+
+Install IntelliJ Separately:
+	install_intellij.sh
+
+Install PyCharm Separately:
+	install_pycharm.sh
+
+Install Eclipse Separately:
+	install_eclipse.sh
+
+Install Google:
+	To install google just go to the google chrome website, download, then in the
+	file explorer, browse to downloads and right-click on the .deb file and open
+	it in the application manager. From there, just click install.
+
+
+
+

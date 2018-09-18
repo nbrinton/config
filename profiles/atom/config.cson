@@ -1,0 +1,38 @@
+"*":
+  core:
+    disabledPackages: [
+      "autocomplete-plus"
+      "vim-mode-plus"
+      "markdown-preview"
+      "intentions"
+      "busy-signal"
+      "docblockr"
+      "Hydrogen"
+      "linter-javac"
+      "linter"
+      "linter-ui-default"
+    ]
+    telemetryConsent: "no"
+    uriHandlerRegistration: "always"
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "4cbb4f58-eb24-4f4f-b2e6-addb4599d7e0"
+  "linter-javac": {}
+  "linter-python":
+    withPep8: true
+  "linter-ui-default":
+    showPanel: true
+  minimap:
+    plugins:
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "sync-settings":
+    _lastBackupHash: "71ac9d36fb145d67b638ba8710074aaf8797f658"
+    gistId: "6e48f81b5248c0f6574f56795f775fc4"
+    personalAccessToken: "02f1b0a96a32c07adc197c7ff1f22b64b4251cb4"
+  welcome:
+    showOnStartup: false
