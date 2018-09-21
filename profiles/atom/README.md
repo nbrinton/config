@@ -3,9 +3,7 @@
 ## Using the sync-settings Package:
 
 1) Install sync-settings package in new Atom instance
-2) Enter the following info:
-  * Personal Access Token: `02f1b0a96a32c07adc197c7ff1f22b64b4251cb4`
-  * Gist ID: `6e48f81b5248c0f6574f56795f775fc4`
+2) Enter my Personal Access Token and Gist ID values.
 3) Press CTRL + SHIFT + P and then type sync and press "Sync Settings: Restore".
 
 ## Copying Config Files:
