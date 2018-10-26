@@ -10,10 +10,15 @@ Set-Alias -Name which -Value get-command
 Set-Alias -Name ll -Value Get-ChildItemcolor -Option AllScope
 Set-Alias -Name ls -Value Get-ChildItemColorFormatWide -Option AllScope
 
+# cls My special custom cls command that clears the screen and then does ls
+function MyCls {
+  clear
+  ls
+}
+Set-Alias -Name cls -Value MyCls -Option AllScope
 
 # touch
-Function MyTouch
-{
+function MyTouch {
     $file = $args[0]
     if($file -eq $null) {
         throw "No filename supplied"
@@ -165,3 +170,8 @@ Set-Alias -Name microsoft-edge -Value MyMicrosoftEdgeCommand -Option AllScope
 # Editors
 # Note: Atom already works, so I don't need to set a default for it. Simply run it by entering "atom"
 Set-Alias -Name notepadpp -Value "C:\Program Files (x86)\Notepad++\notepad++.exe"
+
+# The "code" command already opens Visual Studio Code, but that's not intuitive, so I added a few
+# aliases for it anways.
+Set-Alias -Name vscode -Value code
+Set-Alias -Name visual-studio-code -Value code
