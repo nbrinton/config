@@ -141,6 +141,27 @@ Set-Alias -Name python-group-build B:\ARV_Tool\python-extension\python64\python6
 Set-Alias -Name firefox -Value "C:\Program Files\Mozilla Firefox\firefox.exe"
 Set-Alias -Name google-chrome -Value "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 
+# Function that allows user to open up a webpage or file in Microsoft Edge in the same way that you
+# would with Google Chrome or Mozilla Firefox where you pass in an argument to the .exe for the file
+# or web page that you would like to open. However, Microsoft Edge does not currently support opening
+# local files directly from the command-line, so you can only open web pages from the command-line,
+# and then type out the file url e.g. "file:///filepath/to/my/file"
+function MyMicrosoftEdgeCommand {
+  param(
+    [string]$url
+  )
+
+  $command = "start microsoft-edge:"
+
+  if ($url -ne "") {
+    $command = $command + $url
+  }
+  Invoke-Expression $command
+
+}
+Set-Alias -Name microsoft-edge -Value MyMicrosoftEdgeCommand -Option AllScope
+
+
 # Editors
 # Note: Atom already works, so I don't need to set a default for it. Simply run it by entering "atom"
 Set-Alias -Name notepadpp -Value "C:\Program Files (x86)\Notepad++\notepad++.exe"
